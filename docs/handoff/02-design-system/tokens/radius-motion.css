@@ -1,0 +1,52 @@
+/* ============================================================
+   RADIUS · ELEVATION · MOTION — Soul to Soul
+   Pills for buttons; gentle radii for cards. Elevation is FLAT &
+   editorial: depth comes from a 1px warm hairline and surface
+   contrast, never shadow — the system reads “printed on paper.”
+   Motion is slow and organic — wood, not plastic.
+   ============================================================ */
+
+:root {
+  /* ---- Border radius ---- */
+  --radius-sm:   2px;    /* subtle */
+  --radius-md:   4px;    /* cards, panels, carousel slides */
+  --radius-lg:   8px;    /* large panels, hub-city cards */
+  --radius-xl:   16px;   /* header (expanded), hero video */
+  --radius-2xl:  24px;   /* hero video frame */
+  --radius-pill: 999px;  /* all buttons, collapsed header pill */
+
+  /* ---- Elevation — FLAT editorial ----
+     Depth = a 1px warm hairline + surface contrast, never shadow.
+     --border-card is the elevation primitive used on cards/panels.
+     The --shadow-* tokens are kept as no-ops so any older reference
+     degrades gracefully to flat instead of breaking. ---- */
+  --border-card: 1px solid var(--line);   /* the elevation primitive */
+  --shadow-sm:   none;
+  --shadow-md:   none;
+  --shadow-lg:   none;
+  --shadow-pill: none;
+
+  /* ---- Motion ---- */
+  --ease-natural: cubic-bezier(0.4, 0, 0.2, 1);   /* @kind other */
+  --ease-organic: cubic-bezier(0.5, 0.05, 0.2, 1); /* @kind other */
+  --duration-fast: 200ms;  /* @kind other */
+  --duration-base: 500ms;  /* @kind other */
+  --duration-slow: 1200ms; /* @kind other */
+}
+
+/* ============================================================
+   KEYFRAMES (global — must live outside a component so it is
+   available wherever the component renders).
+   ============================================================ */
+
+/* Tertiary Button underline — the DECIDED editorial-link hover.
+   The already-present line erases left→right, then redraws itself
+   left→right. One-shot, ~0.95s on --ease-natural. Drives the
+   gradient underline in components/actions/Button.jsx (tertiary).
+   Reduced-motion is covered by the global guard in base.css. */
+@keyframes tert-erase-redraw {
+  0%   { background-size: 100% 1.5px; background-position: right bottom; }
+  45%  { background-size: 0% 1.5px;   background-position: right bottom; }
+  46%  { background-size: 0% 1.5px;   background-position: left bottom; }
+  100% { background-size: 100% 1.5px; background-position: left bottom; }
+}

@@ -1,0 +1,39 @@
+/* ============================================================
+   SPACING — Soul to Soul
+   8px base. Generous white space is part of the brand ("hushpitality").
+   Major sections breathe at a standardized ~104px vertical rhythm.
+   ============================================================ */
+
+:root {
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-40: 160px;   /* between major sections */
+
+  /* ---- Semantic rhythm ---- */
+  --section-pad-y:  104px;  /* standardized section vertical rhythm — one value on every section (was an inconsistent 100–140px) */
+  --section-pad-x:  56px;   /* major section horizontal padding / page gutter (22px on mobile) */
+  --heading-gap:    72px;   /* standard gap between a section heading and its content block */
+  --gutter:         80px;   /* editorial two-column gap */
+  --content-max:    1280px; /* shared page max-width — every section aligns to this */
+  --content-wide:   1640px; /* carousels / wide media */
+
+  /* ---- Composition rules (component-level breathing room) ----
+     These guard the two mistakes that break the calm: components
+     glued together, and illustrations crowding/overlapping photos. */
+  --gap-component:       48px;  /* MIN gap between a text block and an adjacent illustration / media cluster — never let them touch */
+  --illustration-clear:  32px;  /* MIN clear space an illustration keeps from any photo or text — illustrations NEVER overlap a photograph */
+  --carousel-controls-gap: 24px;/* gap below carousel media to its prev/next + “scroll for more” — controls sit BELOW the images, never beside them */
+
+  /* ---- Breakpoints (reference) ---- */
+  --bp-mobile:  900px;
+  --bp-tablet:  1280px;
+}

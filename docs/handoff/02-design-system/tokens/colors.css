@@ -1,0 +1,50 @@
+/* ============================================================
+   COLOR — Soul to Soul
+   Warm, grounded, unhurried. Coconut is home; Light gives long
+   text room to breathe; Terracotta is a warm moment, never noise.
+   ============================================================ */
+
+:root {
+  /* ---- Brand palette (base values) ---- */
+  --coffee:        #503421;  /* primary text · deep moments */
+  --coffee-dark:   #3A2517;  /* tagline strip · footer accent dark */
+  --light:         #F7F4F0;  /* long-text section backgrounds */
+  --coconut:       #F0E8D5;  /* main site background · inversion neutral */
+  --terracotta:    #A35940;  /* primary accent · primary CTAs · header pill */
+  --palm:          #D3C381;  /* secondary accent · low-friction CTAs */
+  --palm-deep:     #A89853;  /* hover state of Palm buttons */
+
+  /* ---- Tints / lines derived from Coffee ---- */
+  --coffee-90:     rgba(80, 52, 33, 0.90);
+  --coffee-70:     rgba(80, 52, 33, 0.70);
+  --coffee-55:     rgba(80, 52, 33, 0.55);
+  --line:          rgba(80, 52, 33, 0.18);  /* hairline rules on light */
+  --line-soft:     rgba(80, 52, 33, 0.10);
+  --fill-soft:     rgba(80, 52, 33, 0.05);
+  --light-70:      rgba(247, 244, 240, 0.70);
+  --light-line:    rgba(247, 244, 240, 0.18); /* hairline rules on Coffee */
+
+  /* ---- Pastel weathered colors — WINDOWS OF COLOMBIA ONLY ----
+     These appear nowhere else in the system. Each shutter has a
+     frame ~18% darker (not 35% — too much contrast). */
+  --pastel-blue:    #8aa6b3;  --pastel-blue-frame:   #6b8693;  /* Sierra Nevada */
+  --pastel-ochre:   #c4b078;  --pastel-ochre-frame:  #a89460;  /* Coffee Region */
+  --pastel-coral:   #c89888;  --pastel-coral-frame:  #a87a6a;  /* Cartagena */
+  --pastel-mint:    #9ab09e;  --pastel-mint-frame:   #7d9382;  /* Bogotá */
+
+  /* ---- External brand colors ---- */
+  --whatsapp:      #25D366;   /* WhatsApp icon stays its official green */
+
+  /* ---- Semantic aliases ---- */
+  --surface:            var(--coconut);   /* default site background */
+  --surface-long:       var(--light);     /* long-form text sections */
+  --surface-deep:       var(--coffee);    /* dark / footer moments */
+  --surface-decide:     var(--palm);      /* decisive / conversion moments */
+  --text-body:          var(--coffee);
+  --text-on-deep:       var(--light);
+  --text-muted:         var(--coffee-70);
+  --accent-primary:     var(--terracotta);
+  --accent-secondary:   var(--palm);
+  --rescue:             var(--coconut);   /* adaptive-button inversion neutral */
+  --border-hairline:    var(--line);
+}

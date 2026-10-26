@@ -1,0 +1,61 @@
+/* ============================================================
+   FONTS — Soul to Soul
+   ------------------------------------------------------------
+   Both brand primaries are now self-hosted from the uploaded
+   binaries:
+
+     Milanesa Serif Light  →  self-hosted (.otf)   ✓ display
+     Avenir LT Std         →  self-hosted (.otf)   ✓ body
+       · Book   → weight 300 (light)
+       · Roman  → weight 400 (regular)
+       · Black  → weight 900 (heavy)
+     500/600 requests resolve to the nearest available face.
+
+   Better Yesterday Italic is now self-hosted for the handwritten
+   short-text / subtitle / highlight accent (brandbook P.30); Caveat
+   is kept only as its fallback. Playfair Display + Inter remain as
+   fallbacks only.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500&display=swap');
+
+/* ---- Self-hosted brand display face ---- */
+@font-face {
+  font-family: 'Milanesa Serif Light';
+  src: url('../fonts/MilanesaSerif-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Self-hosted brand body face: Avenir LT Std ---- */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Book.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Roman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Self-hosted brand handwritten accent: Better Yesterday ---- */
+@font-face {
+  font-family: 'Better Yesterday';
+  src: url('../fonts/Better_Yesterday_italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

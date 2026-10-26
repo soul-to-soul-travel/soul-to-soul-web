@@ -1,0 +1,132 @@
+/* ============================================================
+   TYPOGRAPHY — Soul to Soul
+   Display serif for editorial moments only. Body sans for UI and
+   long text. Italic is a SEMANTIC accent (the rotating word, a
+   subtitle, a tertiary link) — never decoration.
+   ============================================================ */
+
+:root {
+  /* ---- Families (real primary first, fallback shipped) ---- */
+  /* Four-role brand system (brandbook P.30):
+     · Milanesa Serif Light  → titles, details, logo typography
+     · Avenir LT Std          → body text
+     · Better Yesterday Italic→ handwritten short texts / subtitles / highlights
+     · Playfair Display       → short & long texts / subtitles / highlights (also Milanesa fallback) */
+  --font-display:  'Milanesa Serif Light', 'Playfair Display', Georgia, serif;
+  --font-subtitle: 'Playfair Display', Georgia, serif;
+  --font-body:     'Avenir', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hand:     'Better Yesterday', 'Caveat', cursive;  /* self-hosted handwritten accent */
+
+  /* ---- Size scale ---- */
+  --text-xs:   11px;   /* eyebrows (uppercase, tracked) */
+  --text-sm:   14px;   /* UI labels, metadata */
+  --text-base: 16px;   /* body */
+  --text-lg:   18px;   /* italic editorial accents, leads */
+  --text-xl:   22px;   /* section eyebrows, small blockquotes */
+  --text-2xl:  32px;   /* section headings */
+  --text-3xl:  44px;   /* major section headings */
+  --text-hero: clamp(40px, 5.4vw, 68px);
+  --text-section: clamp(36px, 4vw, 52px); /* the workhorse editorial heading */
+
+  /* ---- Line heights ---- */
+  --leading-tight:   1.1;
+  --leading-snug:    1.3;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+  --leading-loose:   1.8;
+
+  /* ---- Letter-spacing ----
+     DECIDED: Milanesa Serif display headings default to a touch OPEN
+     tracking (0.01em, "Wide" on the 5-step scale explored via Pillars'
+     heading tweak — Tight -0.01em / Normal 0 / Wide 0.01em / Wider 0.02em /
+     Widest 0.035em — see CLAUDE.md), not tight. The token NAME is legacy
+     (predates this decision) — kept as-is rather than a system-wide rename;
+     read it as "the current default heading tracking", not literally tight.
+     Any component rendering a Milanesa Serif title should reference this
+     var, not hardcode a literal spacing value — Hero/JourneySection/Callout
+     previously hardcoded the OLD -0.01em directly and have been switched to
+     the token so they can't silently drift out of sync with a future
+     change here. This is a DIFFERENT, smaller-step scale than
+     `--tracking-wide`/`--tracking-wider`/`--tracking-widest` below, which
+     are sized for all-caps tracked labels (eyebrows) — not interchangeable
+     with this one. */
+  --tracking-tight:  0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-eyebrow:0.2em;   /* all-caps eyebrows — settled 11px eyebrow spec */
+  --tracking-wider:  0.22em;
+  --tracking-widest: 0.4em;   /* KEEP SEEKING */
+
+  /* ---- Weights (kept light — this is an unhurried brand) ---- */
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+
+  /* ============================================================
+     ROLE RECIPES — size · line-height · letter-spacing, paired.
+     Voice = "Gentle": neutral tracking, open leading. The thin
+     Milanesa serif is left to breathe rather than locked tight;
+     this reads soft and unhurried rather than dense-editorial.
+     Apply all three tokens together for any heading.
+     ============================================================ */
+
+  /* Hero — Milanesa display, above-the-fold statement */
+  --type-hero-size:     var(--text-hero);     /* clamp(40px, 5.4vw, 68px) */
+  --type-hero-leading:  1.16;
+  --type-hero-tracking: 0;
+
+  /* Section — the workhorse editorial heading */
+  --type-section-size:     var(--text-section); /* clamp(36px, 4vw, 52px) */
+  --type-section-leading:  1.25;
+  --type-section-tracking: 0;
+
+  /* Heading — standard section title / card heading */
+  --type-heading-size:     var(--text-2xl);   /* 32px */
+  --type-heading-leading:  1.25;
+  --type-heading-tracking: 0;
+
+  /* Subheading — small headings, blockquote scale */
+  --type-subheading-size:     var(--text-xl); /* 22px */
+  --type-subheading-leading:  1.3;
+  --type-subheading-tracking: 0;
+
+  /* Lead — italic Playfair editorial accent / standfirst */
+  --type-lead-size:     var(--text-lg);        /* 18px */
+  --type-lead-leading:  1.5;
+  --type-lead-tracking: 0;
+
+  /* Body — Avenir long-form copy */
+  --type-body-size:     var(--text-base);      /* 16px */
+  --type-body-leading:  1.65;
+  --type-body-tracking: 0;
+
+  /* Meta — UI labels, metadata, captions */
+  --type-meta-size:     var(--text-sm);        /* 14px */
+  --type-meta-leading:  1.5;
+  --type-meta-tracking: 0;
+
+  /* Eyebrow — all-caps tracked kicker */
+  --type-eyebrow-size:     var(--text-xs);     /* 11px */
+  --type-eyebrow-leading:  1.4;
+  --type-eyebrow-tracking: var(--tracking-eyebrow); /* 0.2em */
+
+  /* ============================================================
+     OPTICAL TRIM — leading correction, measured not eyeballed.
+     line-height reserves space for a font's DECLARED metrics, not
+     for the ink actually drawn. Measured with canvas font metrics
+     (fontBoundingBox* vs actualBoundingBox*) against the real
+     self-hosted faces, then torture-tested against accented
+     capitals (Á/É/Í/Ó/Ú/Ñ) and real descenders so nothing clips.
+     Only ship a trim where that test comes back safe:
+       · Eyebrow — SAFE. All-caps text structurally never has a
+         descender, so the font's descender allowance is 100%
+         reclaimable every time, in any language.
+       · Display heading — tested, NOT safe/worth it. Milanesa's
+         ascent metric is already sized for accented capitals, and
+         real headings sometimes carry a descender — safe slack
+         came back near zero either way, so it's left untrimmed.
+         Not every seam needs correcting.
+     ============================================================ */
+  --trim-eyebrow-bottom: -0.412em; /* use on top of the authored gap: calc(16px + var(--trim-eyebrow-bottom)) */
+}

@@ -1,0 +1,64 @@
+/* ============================================================
+   BASE — resets + brand defaults + a few utility classes.
+   Components and UI kits reference CSS custom properties; these
+   classes are conveniences for specimen cards and editorial markup.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  font-weight: var(--weight-regular);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--palm); color: var(--coffee); }
+
+a { color: inherit; }
+
+/* ---- Editorial display heading ---- */
+.s2s-display {
+  font-family: var(--font-display);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+/* The semantic accent word inside a display heading */
+.s2s-accent { font-style: italic; color: var(--terracotta); }
+
+/* ---- Eyebrow (tracked, uppercase) ---- */
+.s2s-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--coffee-55);
+}
+
+/* ---- Subtitle / italic editorial lead ---- */
+.s2s-subtitle {
+  font-family: var(--font-subtitle);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--coffee-70);
+  line-height: var(--leading-snug);
+}
+
+/* ---- The tagline lockup ---- */
+.s2s-tagline {
+  font-family: var(--font-subtitle);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--palm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
