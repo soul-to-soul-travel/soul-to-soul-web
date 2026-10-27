@@ -6,6 +6,7 @@ Estado: [DISEÑADA]
 
 | Qué | Ruta |
 |---|---|
+| Vista para abrir en el navegador (doble clic, funciona sin internet) | `03-paginas/02-about/VISTA-about.html` (exportada el 2026-10-26; los dos logos del header se embebieron a mano porque la exportación no los incluía) |
 | Código fuente del prototipo | `03-paginas/02-about/fuente/About.dc.html` |
 | Imágenes que usa | `03-paginas/02-about/fuente/assets/` (incluye `illustrations/orquidea-sin-tallo.png` y `symbols/sunburst-eye.png`, que NO están en el design system general) |
 | Design system embebido | `fuente/_ds/` — tokens idénticos a `02-design-system/tokens/` (verificado el 2026-10-26) |
