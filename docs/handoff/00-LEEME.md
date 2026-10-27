@@ -9,7 +9,7 @@ version_para_humanos: Google Doc "00 · Léeme — Empieza aquí (para humanos)"
 
 # Paquete de entrega del sitio web — índice para IA
 
-> **Si estás leyendo esto en el repo** (`docs/handoff/`): aquí solo está el texto. Las rutas de este archivo son relativas al paquete del Drive; `03-paginas/` está plana en el repo y los prototipos, assets, fuentes y el brandbook viven solo en el Drive. Detalle en `LEEME-REPO.md`.
+> **Si estás leyendo esto en el repo** (`docs/handoff/`): aquí solo está el texto. Las rutas de este archivo son relativas al paquete del Drive; `03-paginas/` está plana en el repo y los prototipos, assets, fuentes, fotos y el brandbook viven solo en el Drive. Detalle en `LEEME-REPO.md`.
 
 Este archivo es el punto de entrada para un modelo de IA que tenga conectada esta carpeta. Describe qué hay en cada lugar, qué manda cuando hay contradicciones y dónde está la respuesta a cada tipo de pregunta. La versión para leer como persona es el Google Doc de esta misma carpeta.
 
@@ -47,10 +47,12 @@ Este archivo es el punto de entrada para un modelo de IA que tenga conectada est
 | `00-LEEME.md` | Este índice | Siempre primero |
 | `AGENTS.md` / `CLAUDE.md` | Reglas de código: stack, convenciones fijas, performance | Vas a escribir código |
 | `PENDIENTES.md` | 36 pendientes numerados con dueño (Equipo / Dev); los abiertos también son issues en GitHub | Algo no está claro o falta |
+| `01-marca/LEEME-marca.md` | Mapa de la marca: dónde está cada cosa (manual, logos, fuentes, fotos, ilustraciones, texturas, formas, símbolos) | Cualquier pregunta de "dónde está X de la marca" |
 | `01-marca/brandbook/` | Manual de marca oficial VF 2026 (PDF) | Dudas de marca que el design system no cubre |
 | `01-marca/logos/` | 5 lockups SVG (horizontal, vertical, logotype, isotype, stamp) en `currentColor` y tintes, más `masters-editables/` | Necesitas el logo |
 | `01-marca/fuentes/` | Milanesa Serif y Better Yesterday (WOFF2/WOFF/OTF) y Avenir LT Std (solo OTF) | Configurar tipografías. Licencia web [PENDIENTE] (#1) |
 | `01-marca/keep-seeking/` | Lettering "Keep Seeking" en SVG | Pre-footer / tagline |
+| `01-marca/fotos-seleccionadas/` | Fotos elegidas por el equipo, por carpeta: Colombia general (24), Coffee Region (46), Bogotá (6), Home (1). Ver `LEEME-fotos.md` ahí | Necesitas una foto para cualquier sección. Nunca stock |
 | `02-design-system/readme.md` | La marca completa: dirección creativa, voz, paleta, tipografía, layout, iconografía, índice de componentes | Cualquier decisión visual o de tono |
 | `02-design-system/design-decisions.md` | Log de decisiones de diseño: qué se probó, qué se revirtió y por qué | Antes de "mejorar" algo ya decidido |
 | `02-design-system/tokens/` | Variables CSS (`colors`, `typography`, `spacing`, `radius-motion`, `fonts`, `base`) y `tokens.json` | Configurar Tailwind o el CSS base |
@@ -131,7 +133,8 @@ Detalle en `PENDIENTES.md`: #1 licencias de fuentes · #3 revisión de la traduc
 | ¿Qué campos tiene una página de viaje en el CMS? | `04-contenido/plantilla-pagina-de-viaje.md` |
 | ¿Cómo se escribe para la marca? | `04-contenido/journey-page-communication-guidelines.md` + readme del design system, sección CONTENT FUNDAMENTALS |
 | ¿Qué falta o qué está sin decidir? | `PENDIENTES.md` (y los issues del repo) |
-| ¿Qué artículos del blog se migran? | `04-contenido/inventario-blog-migracion.md` |
+| ¿Qué artículos del blog se migran? | `04-contenido/inventario-blog-migracion.md`. El blog actual está en https://www.travelsoultosoul.com/blog (29 artículos; 22 se migran) |
+| ¿Dónde están los logos, las fuentes, las fotos, las ilustraciones o las texturas? | `01-marca/LEEME-marca.md` |
 | ¿Qué herramientas e integraciones van? | `05-tecnico/stack-e-integraciones.md` |
 | ¿Por dónde empiezo y qué hay que pulir del diseño? | `05-tecnico/pulido-de-diseno.md` (primero el Home) |
 | ¿Con qué correo se crean las cuentas de las herramientas? | `tech@travelsoultosoul.com` (sección 6 de este archivo) |

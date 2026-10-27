@@ -6,6 +6,7 @@ Esta carpeta es una copia **solo de texto** del paquete de entrega del sitio, he
 
 - `00-LEEME.md`: documento de entrada.
 - `PENDIENTES.md`: los pendientes. Cada uno abierto tiene su issue en GitHub, con las etiquetas `equipo` / `dev`.
+- `01-marca/`: solo los dos mapas en texto (`LEEME-marca.md`, `LEEME-fotos.md`); los archivos de marca están en el Drive.
 - `02-design-system/`: el readme de marca, el log de decisiones y los tokens (CSS + `tokens.json`).
 - `03-paginas/`: las NOTAS y BRIEFs de todas las páginas, juntas en una sola carpeta. En el paquete del Drive cada página tiene su propia subcarpeta.
 - `04-contenido/`: el copy en inglés (exportado de Notion), el inventario del blog y `es/` con la traducción preliminar al español.
