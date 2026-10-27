@@ -62,7 +62,7 @@ Este archivo es el punto de entrada para un modelo de IA que tenga conectada est
 | `03-paginas/` | Una carpeta por página (ver sección 5) | Construir una página |
 | `04-contenido/` | Copy exportado de Notion (EN), plantilla de página de viaje, guía de comunicación, FAQs, inventario del blog | Necesitas el texto de una página |
 | `04-contenido/es/` | Traducción preliminar al español, marcada [TRADUCCIÓN PRELIMINAR — REVISAR] | Versión ES del sitio |
-| `05-tecnico/` | Stack e integraciones; plan de desarrollo de Notion; `para-el-repo/` (los archivos que ya están en GitHub) | Infraestructura e integraciones |
+| `05-tecnico/` | Stack e integraciones; `pulido-de-diseno.md` (qué conservar y qué unificar en los prototipos); plan de desarrollo de Notion; `para-el-repo/` (los archivos que ya están en GitHub) | Infraestructura e integraciones |
 
 ## 5. Páginas del sitio
 
@@ -70,11 +70,11 @@ Este archivo es el punto de entrada para un modelo de IA que tenga conectada est
 |---|---|---|---|---|---|---|---|
 | 1 | Home | `/` | [DISEÑADA] con cambios del 2026-10-26 | `03-paginas/01-home/NOTAS-home.md` | `03-paginas/01-home/VISTA-home.html` | prototipo | `04-contenido/es/home-es.md` |
 | 2 | About Us | `/about` | [DISEÑADA] | `03-paginas/02-about/NOTAS-about.md` | — (fuente: `fuente/About.dc.html`) | `04-contenido/about-who-we-are-contenido.md` | `04-contenido/es/about-es.md` |
-| 3 | Página de viaje — Coffee Region (Kabai). **Plantilla de todos los viajes** | `/journeys/[slug]` | [DISEÑADA] | `03-paginas/03-plantilla-viaje-coffee-region/NOTAS-plantilla-viaje.md` | `…/VISTA-coffee-region.html` | `04-contenido/coffee-region-kabai-contenido-web.md` | `04-contenido/es/coffee-region-kabai-es.md` |
+| 3 | Página de viaje — Coffee Region. **Plantilla de todos los viajes** | `/journeys/[slug]` | [DISEÑADA] | `03-paginas/03-plantilla-viaje-coffee-region/NOTAS-plantilla-viaje.md` | `…/VISTA-coffee-region.html` | `04-contenido/coffee-region-kabai-contenido-web.md` | `04-contenido/es/coffee-region-kabai-es.md` |
 | 4 | Why Colombia | `/why-colombia` | [DISEÑADA], faltan medios | `03-paginas/04-why-colombia/NOTAS-why-colombia.md` | `…/VISTA-why-colombia.html` | prototipo (`fuente/`) | `04-contenido/es/why-colombia-es.md` |
 | 5 | Inspiration (blog) + migración | `/inspiration`, `/inspiration/[slug]` | [SIN DISEÑO] — brief | `03-paginas/05-inspiration-blog/BRIEF-inspiration.md` | — | `04-contenido/inventario-blog-migracion.md` | — |
 | 6 | Destinations | `/destinations` | [SIN DISEÑO] — brief | `03-paginas/06-destinations/BRIEF-destinations.md` | — | — | — |
-| 7 | Viaje Bogotá (Bacatá) | `/journeys/[slug]` | Usa la plantilla 3 | `03-paginas/07-viaje-bogota/BRIEF-viaje-bogota.md` | — | `04-contenido/bogota-bacata-contenido-web.md` | `04-contenido/es/bogota-bacata-es.md` |
+| 7 | Viaje Bogotá | `/journeys/[slug]` | Usa la plantilla 3 | `03-paginas/07-viaje-bogota/BRIEF-viaje-bogota.md` | — | `04-contenido/bogota-bacata-contenido-web.md` | `04-contenido/es/bogota-bacata-es.md` |
 | 8 | Letter from the founders | `/letter-from-the-founders` | [SIN DISEÑO] [SIN COPY] | `03-paginas/08-letter-from-the-founders/BRIEF-letter-from-the-founders.md` | — | [PENDIENTE] | [PENDIENTE] |
 | 9 | Legales: Privacy, Terms, Cookies | `/legal/[slug]` | [SIN DISEÑO] [SIN TEXTO] | `03-paginas/09-legales/BRIEF-legales.md` | — | [PENDIENTE] | [PENDIENTE] |
 | 10 | Quiz de arquetipos (destino de todos los CTA) | `/find-your-journey` (nombre [PENDIENTE]) | [EN ALCANCE], concepto por cerrar | `03-paginas/10-quiz-arquetipos/BRIEF-quiz-arquetipos.md` | — | — | — |
@@ -84,7 +84,11 @@ Fuera de la v1: Testimonials (como página propia), Careers y Our Team como pág
 ## 6. Decisiones cerradas (2026-10-26)
 
 - **Home:** se usa la versión del design system, con el hero de frase fija "…reconnecting to *yourself*".
-- **Viajes principales del Home:** Bogotá (Bacatá) y Eje Cafetero (Kabai). Sierra Nevada pasa a "Coming soon".
+- **Viajes principales del Home:** Bogotá y Coffee Region. Sierra Nevada pasa a "Coming soon".
+- **Nombres de los viajes:** se llaman simplemente **Coffee Region** y **Bogotá** (en español: Región Cafetera y Bogotá). Los nombres Kabai y Bacatá quedan retirados: no van en el sitio, en las URLs ni en los metadatos. Los archivos de copy en `04-contenido/` todavía los usan en el título, el hero, la sección que explica la palabra y el SEO; esos pasajes están [POR REESCRIBIR] (pendiente #37 en `PENDIENTES.md`). Mientras tanto, donde el copy diga "Kabai Journey" léase "Coffee Region Journey" y donde diga "Bacatá Journey" léase "Bogotá Journey".
+- **Orden de trabajo:** primero el Home, completo y pulido. Se revisa en conjunto y de esa revisión salen las reglas (espaciado, tipografía, retícula, uso de ilustraciones) que se aplican al resto de páginas.
+- **Pulido de diseño es parte del alcance.** Los prototipos tienen inconsistencias de márgenes, tamaños de letra y cantidad de elementos decorativos; el desarrollador las unifica conservando lo que funciona (el hero que se convierte en el sello, la luz de Keep Seeking en el páramo, las ventanas que se abren, las ilustraciones). Detalle en `05-tecnico/pulido-de-diseno.md`.
+- **Cuentas y herramientas:** toda cuenta nueva (Vercel, Sanity, Resend, Brevo, PostHog, dominio) se crea con el correo del equipo `tech@travelsoultosoul.com` [PENDIENTE: crear ese correo], para que Soul to Soul sea dueña desde el primer día. El desarrollador entra en cada herramienta como miembro con su propio correo, nunca como dueño.
 - **Carrusel de extensiones, en orden:** Sierra Nevada (coming soon), San Andrés, Barichara, Boyacá y Oaxaca al final, como adelanto de México.
 - **Pilares:** Balance · Connection · **Firsthand** ("Craft" quedó retirado).
 - **CTA principal:** "Enquire Now" / "Get in Touch". Lleva al quiz de arquetipos, que construye el desarrollador.
@@ -105,8 +109,8 @@ Detalle en `PENDIENTES.md`: #1 licencias de fuentes · #3 revisión de la traduc
 |---|---|
 | Raíz | Nombre interno de la línea de viajes por Colombia. **Nunca** se publica |
 | Tidur | Viaje insignia anterior por Asia (Singapur, Bali, Camboya), cerrado en 2026 |
-| Kabai Journey | Viaje al Eje Cafetero (Coffee Region). "Kabai" es una palabra emberá chamí |
-| Bacatá Journey | Viaje a Bogotá |
+| Kabai Journey | Nombre anterior del viaje al Eje Cafetero. Retirado el 2026-10-26: el viaje se llama **Coffee Region**. Aparece todavía en los archivos de copy |
+| Bacatá Journey | Nombre anterior del viaje a Bogotá. Retirado el 2026-10-26: el viaje se llama **Bogotá**. Aparece todavía en los archivos de copy |
 | Windows of Colombia | Componente firma: ventanas coloniales pastel que se abren al hover. Es la puerta al blog |
 | Firsthand | Tercer pilar de "How we travel" (reemplazó a "Craft") |
 | Coconut / Light / Coffee / Terracotta / Palm | Los 5 colores de marca: `#F0E8D5` / `#F7F4F0` / `#503421` / `#A35940` / `#D3C381` |
@@ -129,6 +133,8 @@ Detalle en `PENDIENTES.md`: #1 licencias de fuentes · #3 revisión de la traduc
 | ¿Qué falta o qué está sin decidir? | `PENDIENTES.md` (y los issues del repo) |
 | ¿Qué artículos del blog se migran? | `04-contenido/inventario-blog-migracion.md` |
 | ¿Qué herramientas e integraciones van? | `05-tecnico/stack-e-integraciones.md` |
+| ¿Por dónde empiezo y qué hay que pulir del diseño? | `05-tecnico/pulido-de-diseno.md` (primero el Home) |
+| ¿Con qué correo se crean las cuentas de las herramientas? | `tech@travelsoultosoul.com` (sección 6 de este archivo) |
 | ¿Dónde están las fotos y el video originales? | Fuera de esta carpeta (ver sección 10) |
 
 ## 10. Lo que NO está en este paquete

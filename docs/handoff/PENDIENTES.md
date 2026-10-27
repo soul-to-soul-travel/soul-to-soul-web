@@ -1,6 +1,6 @@
 # Pendientes y decisiones abiertas
 
-Última actualización: 2026-10-26. Cada pendiente indica a quién le toca: **Equipo** (Soul to Soul) o **Dev** (el desarrollador). Cuando algo se cierre, se marca [RESUELTO] con la fecha.
+Última actualización: 2026-10-26. Cada pendiente abierto también es un issue en GitHub (`soul-to-soul-travel/soul-to-soul-web`), con las etiquetas `equipo`, `dev`, `bloquea-lanzamiento` y `contenido`. Cada pendiente indica a quién le toca: **Equipo** (Soul to Soul) o **Dev** (el desarrollador). Cuando algo se cierre, se marca [RESUELTO] con la fecha.
 
 ## Bloquean el lanzamiento
 
@@ -14,7 +14,7 @@
 | 6 | Fotos reales del equipo y de la red de anfitriones | Equipo | `03-paginas/02-about` |
 | 7 | Videos, fotos y audios de Why Colombia (hoy son marcadores `[VIDEO]`, `[PHOTO]`, `[AUDIO]`) y verificación de las fuentes 2 y 5 | Equipo | `03-paginas/04-why-colombia` |
 | 8 | Cifras reales del bloque "Who we are": 5+ años, 200+ viajeros (el design system dice 150+), 25K+ comunidad | Equipo | Home |
-| 9 | Accesos para el desarrollador: organización de GitHub (nombre del repo), Vercel, Sanity, Brevo, dominio/DNS, PostHog, Meta | Equipo | Técnico |
+| 9 | Accesos para el desarrollador: Vercel, Sanity, Brevo, dominio/DNS, PostHog, Meta. Antes, crear el correo del equipo `tech@travelsoultosoul.com` con el que se abren todas las cuentas (el desarrollador entra como miembro con su propio correo). GitHub [RESUELTO 2026-10-26]: organización `soul-to-soul-travel`, repo privado `soul-to-soul-web`; falta invitar al desarrollador como colaborador del repo | Equipo | Técnico |
 
 ## Decisiones de contenido por cerrar
 
@@ -22,11 +22,12 @@
 |---|---|---|
 | 10 | [RESUELTO 2026-10-26] Hero: versión del design system, frase fija "yourself" | — |
 | 11 | [RESUELTO 2026-10-26] Extensiones: Sierra Nevada (coming soon), San Andrés, Barichara, Boyacá y Oaxaca al final como adelanto de México | — |
-| 12 | Nombres visibles de los viajes: en Notion son "Kabai Journey" (Eje Cafetero) y "Bacatá Journey" (Bogotá); el prototipo del Home dice "The Eje Cafetero". Definir cómo se nombran en Home y menú | Equipo |
+| 12 | [RESUELTO 2026-10-26] Los viajes se llaman **Coffee Region** y **Bogotá** (ES: Región Cafetera y Bogotá). Kabai y Bacatá quedan retirados. Ver #37 | — |
 | 13 | About: el equipo aparece en dos formatos en el prototipo; elegir uno | Equipo |
 | 14 | Sierra Nevada "Coming soon": ¿sin enlace o con lista de espera? | Equipo |
 | 15 | Artículos nuevos para las ventanas del Home (los títulos del prototipo son de relleno) y quién traduce los del blog actual | Equipo |
 | 16 | Concepto del quiz de arquetipos (swipe tipo Tinder): está en el alcance del desarrollador; se cierra en conjunto con el equipo | Dev + Equipo |
+| 37 | Reescribir los pasajes del copy que dependían de los nombres Kabai y Bacatá: título y hero, la sección 02 que explica la palabra, el bloque "Nombre del viaje", la URL (`/journeys/kabai-coffee-region` pasa a `/journeys/coffee-region`), meta title y H1. Archivos: `04-contenido/coffee-region-kabai-contenido-web.md`, `04-contenido/bogota-bacata-contenido-web.md` y sus versiones en `es/` | Equipo |
 
 ## Encontrados al exportar el contenido de Notion (2026-10-26)
 
@@ -64,6 +65,8 @@ Cada archivo de `04-contenido/es/` marca sus dudas con [REVISAR]. Las que afecta
 | 18 | Herramienta del banner de consentimiento de cookies | Dev |
 | 19 | Comportamiento de las ventanas en móvil (tap o al entrar en pantalla) | Dev |
 | 20 | Pipeline de optimización de imágenes (las ilustraciones originales pesan 10–17 MB) | Dev |
+| 38 | Pulido de diseño: unificar espaciado, escala tipográfica, botones, radios e ilustraciones según `05-tecnico/pulido-de-diseno.md`. Primero el Home, revisión conjunta y de ahí las reglas para el resto | Dev |
+| 39 | Home en móvil: el prototipo no está adaptado (a 390 px desborda); se construye responsive desde el inicio con el breakpoint del design system | Dev |
 
 ## Fuera de la v1 (v2)
 
