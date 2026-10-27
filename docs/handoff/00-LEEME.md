@@ -72,7 +72,7 @@ Este archivo es el punto de entrada para un modelo de IA que tenga conectada est
 | # | Página | Ruta sugerida | Estado | Notas o brief | Vista (doble clic) | Copy EN | Copy ES |
 |---|---|---|---|---|---|---|---|
 | 1 | Home | `/` | [DISEÑADA] con cambios del 2026-10-26 | `03-paginas/01-home/NOTAS-home.md` | `03-paginas/01-home/VISTA-home.html` | prototipo | `04-contenido/es/home-es.md` |
-| 2 | About Us | `/about` | [DISEÑADA] | `03-paginas/02-about/NOTAS-about.md` | — (fuente: `fuente/About.dc.html`) | `04-contenido/about-who-we-are-contenido.md` | `04-contenido/es/about-es.md` |
+| 2 | About Us | `/about` | [DISEÑADA] | `03-paginas/02-about/NOTAS-about.md` | `…/VISTA-about.html` | `04-contenido/about-who-we-are-contenido.md` | `04-contenido/es/about-es.md` |
 | 3 | Página de viaje — Coffee Region. **Plantilla de todos los viajes** | `/journeys/[slug]` | [DISEÑADA] | `03-paginas/03-plantilla-viaje-coffee-region/NOTAS-plantilla-viaje.md` | `…/VISTA-coffee-region.html` | `04-contenido/coffee-region-kabai-contenido-web.md` | `04-contenido/es/coffee-region-kabai-es.md` |
 | 4 | Why Colombia | `/why-colombia` | [DISEÑADA], faltan medios | `03-paginas/04-why-colombia/NOTAS-why-colombia.md` | `…/VISTA-why-colombia.html` | prototipo (`fuente/`) | `04-contenido/es/why-colombia-es.md` |
 | 5 | Inspiration (blog) + migración | `/inspiration`, `/inspiration/[slug]` | [SIN DISEÑO] — brief | `03-paginas/05-inspiration-blog/BRIEF-inspiration.md` | — | `04-contenido/inventario-blog-migracion.md` | — |
