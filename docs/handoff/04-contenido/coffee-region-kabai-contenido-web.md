@@ -1,5 +1,7 @@
 # Contenido página web — Ruta 3 · Eje Cafetero (Kabai Journey)
 
+> [DECISIÓN 2026-10-26] El viaje ya no se llama Kabai: se llama **Coffee Region**. Donde este archivo diga "Kabai Journey" léase "Coffee Region Journey". Los pasajes que explican la palabra Kabai (hero, sección 02, "Nombre del viaje", SEO, URL) están [POR REESCRIBIR]; ver pendiente #37.
+
 - Notion: https://app.notion.com/p/3eb1d15d036a81faa1f0e759fa83e94d
 - Ruta en Notion: 0- Privado General / 1. Proyecto Raíz / 1. Diseño de Viajes / 3. Rutas Colombia / Ruta 3 - Eje Cafetero
 - Última edición en Notion: 2026-10-23

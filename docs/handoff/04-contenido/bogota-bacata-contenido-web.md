@@ -1,5 +1,7 @@
 # Contenido página web — Bacatá (Ruta 4 · Bogotá)
 
+> [DECISIÓN 2026-10-26] El viaje ya no se llama Bacatá: se llama **Bogotá**. Donde este archivo diga "Bacatá Journey" léase "Bogotá Journey". Los pasajes que explican la palabra Bacatá (hero, sección 02, "Nombre del viaje", SEO, URL) están [POR REESCRIBIR]; ver pendiente #37.
+
 - Notion: https://app.notion.com/p/4001d15d036a81c69ba6d622b319da64
 - Ruta en Notion: 0- Privado General / 1. Proyecto Raíz / 1. Diseño de Viajes / 3. Rutas Colombia / Ruta 4 - Bogotá
 - Última edición en Notion: 2026-10-21
