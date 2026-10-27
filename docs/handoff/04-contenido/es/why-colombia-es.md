@@ -262,12 +262,12 @@ Y cuánta vida cabe en lo cotidiano.
 **Tarjeta 1 — El viaje por Bogotá**
 Bajada: Una ciudad de muchas Colombias
 [NOTA DE PRODUCCIÓN] Foto: Bogotá, una calle después de la lluvia.
-[REVISAR: el nombre del viaje es "Bacatá Journey" y, según la guía, los nombres de los viajes no se traducen; confirmar si la tarjeta usa el nombre propio]
+[DECISIÓN 2026-10-26: el viaje se llama "Bogotá"; usar ese nombre en la tarjeta]
 
 **Tarjeta 2 — El viaje por el Eje Cafetero**
 Bajada: Donde la tierra les dio forma a los días
 [NOTA DE PRODUCCIÓN] Foto: Eje Cafetero, una parcela familiar en la ladera.
-[REVISAR: el nombre del viaje es "Kabai Journey" y, según la guía, los nombres de los viajes no se traducen; confirmar si la tarjeta usa el nombre propio]
+[DECISIÓN 2026-10-26: el viaje se llama "Región Cafetera"; usar ese nombre en la tarjeta]
 
 **Texto:** Vienen más Colombias en camino.
 

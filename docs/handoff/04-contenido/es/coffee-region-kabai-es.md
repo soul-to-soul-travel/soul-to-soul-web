@@ -1,5 +1,7 @@
 # Kabai Journey — copy en español
 
+> [DECISIÓN 2026-10-26] El viaje ya no se llama Kabai: se llama **Región Cafetera**. Donde este archivo diga "Kabai Journey" léase "Región Cafetera Journey". Los pasajes que explican la palabra Kabai (hero, sección 02, "Nombre del viaje", SEO, URL) están [POR REESCRIBIR]; ver pendiente #37.
+
 > [TRADUCCIÓN PRELIMINAR — REVISAR] Traducido por Claude el 2026-10-26 a partir de coffee-region-contenido-web.md. Pendiente de revisión del equipo.
 
 ---

@@ -1,5 +1,7 @@
 # Bacatá Journey (Bogotá) — copy en español
 
+> [DECISIÓN 2026-10-26] El viaje ya no se llama Bacatá: se llama **Bogotá**. Donde este archivo diga "Bacatá Journey" léase "Bogotá Journey". Los pasajes que explican la palabra Bacatá (hero, sección 02, "Nombre del viaje", SEO, URL) están [POR REESCRIBIR]; ver pendiente #37.
+
 > [TRADUCCIÓN PRELIMINAR — REVISAR] Traducido por Claude el 2026-10-26 a partir de bogota-bacata-contenido-web.md. Pendiente de revisión del equipo.
 
 Encabezado del archivo fuente (enlaces y fechas de Notion), nota de exportación y tabla "Estado por sección": [NO SE TRADUCE — material interno]

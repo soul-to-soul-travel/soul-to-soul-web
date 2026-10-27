@@ -25,7 +25,7 @@ Read this whole file before translating. Then read `journey-page-communication-g
 - Balance → Equilibrio
 - Connection → Conexión
 - A slow letter, once a month → Una carta sin prisa, una vez al mes
-- Journey names stay as they are: Kabai Journey, Bacatá Journey. Place names stay in Spanish: Eje Cafetero, Valle de Cocora, Sierra Nevada.
+- Journey names [DECISIÓN 2026-10-26]: "Coffee Region Journey" → "Región Cafetera" and "Bogotá Journey" → "Bogotá". The old names Kabai and Bacatá are retired and must not appear in published copy; where a source still has them, flag it with [POR REESCRIBIR]. Place names stay in Spanish: Eje Cafetero, Valle de Cocora, Sierra Nevada.
 - Prices and units: "USD 4,200" becomes "USD 4.200". Use day/month order for dates.
 
 ## Prohibido
