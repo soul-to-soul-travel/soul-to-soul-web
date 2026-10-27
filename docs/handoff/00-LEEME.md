@@ -27,8 +27,9 @@ Este archivo es el punto de entrada para un modelo de IA que tenga conectada est
 4. Para preguntas de marca o de diseño visual, la fuente es `02-design-system/readme.md` y después `02-design-system/design-decisions.md`.
 5. Para el copy (textos del sitio), la fuente es `04-contenido/`, no el texto escrito dentro de los prototipos.
 6. Los archivos `.dc.html`, `.jsx` y `VISTA-*.html` son prototipos que corren dentro de Claude Design. Úsalos para entender layout y comportamiento, nunca como código para copiar tal cual.
-7. "Raíz" es un nombre **interno** del proyecto. Nunca aparece en el sitio publicado.
-8. Para construir código, sigue además `AGENTS.md` (convenciones fijas).
+7. Los cuatro prototipos diseñados también se ven en el navegador, en versión aligerada (fotos a 1800 px, fuentes solo latinas): https://soul-to-soul-travel.github.io/soul-to-soul-prototypes/ (Home, About Us, Coffee Region, Why Colombia). Es un repo público solo de consulta; la fuente oficial siguen siendo los archivos `VISTA-*.html` y `fuente/` de este paquete.
+8. "Raíz" es un nombre **interno** del proyecto. Nunca aparece en el sitio publicado.
+9. Para construir código, sigue además `AGENTS.md` (convenciones fijas).
 
 ## 3. Orden de autoridad (qué manda cuando dos fuentes no coinciden)
 
@@ -136,6 +137,7 @@ Detalle en `PENDIENTES.md`: #1 licencias de fuentes · #3 revisión de la traduc
 | ¿Qué artículos del blog se migran? | `04-contenido/inventario-blog-migracion.md`. El blog actual está en https://www.travelsoultosoul.com/blog (29 artículos; 22 se migran) |
 | ¿Dónde están los logos, las fuentes, las fotos, las ilustraciones o las texturas? | `01-marca/LEEME-marca.md` |
 | ¿Qué herramientas e integraciones van? | `05-tecnico/stack-e-integraciones.md` |
+| ¿Dónde veo los prototipos sin descargar nada? | https://soul-to-soul-travel.github.io/soul-to-soul-prototypes/ (versión aligerada; repo `soul-to-soul-travel/soul-to-soul-prototypes`) |
 | ¿Por dónde empiezo y qué hay que pulir del diseño? | `05-tecnico/pulido-de-diseno.md` (primero el Home) |
 | ¿Con qué correo se crean las cuentas de las herramientas? | `tech@travelsoultosoul.com` (sección 6 de este archivo) |
 | ¿Dónde están las fotos y el video originales? | Fuera de esta carpeta (ver sección 10) |

@@ -14,7 +14,7 @@
 | 6 | Fotos reales del equipo y de la red de anfitriones | Equipo | `03-paginas/02-about` |
 | 7 | Videos, fotos y audios de Why Colombia (hoy son marcadores `[VIDEO]`, `[PHOTO]`, `[AUDIO]`) y verificación de las fuentes 2 y 5 | Equipo | `03-paginas/04-why-colombia` |
 | 8 | Cifras reales del bloque "Who we are": 5+ años, 200+ viajeros (el design system dice 150+), 25K+ comunidad | Equipo | Home |
-| 9 | Accesos para el desarrollador: Vercel, Sanity, Brevo, dominio/DNS, PostHog, Meta. Antes, crear el correo del equipo `tech@travelsoultosoul.com` con el que se abren todas las cuentas (el desarrollador entra como miembro con su propio correo). GitHub [RESUELTO 2026-10-26]: organización `soul-to-soul-travel`, repo privado `soul-to-soul-web`; falta invitar al desarrollador como colaborador del repo | Equipo | Técnico |
+| 9 | Accesos para el desarrollador: Vercel, Sanity, Brevo, dominio/DNS, PostHog, Meta. Antes, crear el correo del equipo `tech@travelsoultosoul.com` con el que se abren todas las cuentas (el desarrollador entra como miembro con su propio correo). GitHub [RESUELTO 2026-10-26]: organización `soul-to-soul-travel`, repo privado `soul-to-soul-web` y repo público `soul-to-soul-prototypes` (GitHub Pages con las vistas); falta invitar al desarrollador como colaborador del repo | Equipo | Técnico |
 
 ## Decisiones de contenido por cerrar
 
