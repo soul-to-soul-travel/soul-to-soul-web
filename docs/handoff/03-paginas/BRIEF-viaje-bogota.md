@@ -1,4 +1,4 @@
-# Viaje Bogotá (Bacatá) — brief
+# Viaje Bogotá — brief
 
 Estado: [SIN DISEÑO PROPIO] — usa la plantilla de la Coffee Region (`03-paginas/03-plantilla-viaje-coffee-region`). Entra en la v1.
 
@@ -14,5 +14,5 @@ La página de Bogotá debe quedar **muy similar** a la de Coffee Region: misma e
 
 ## Pendientes
 
-- [PENDIENTE] Nombre visible: "Bogotá" o "Bacatá".
+- [RESUELTO 2026-10-26] Nombre visible: **Bogotá** (ES: Bogotá). "Bacatá" queda retirado; el copy que explica la palabra está [POR REESCRIBIR] (pendiente #37).
 - [PENDIENTE] Fotos suficientes para cubrir todas las secciones de la plantilla.

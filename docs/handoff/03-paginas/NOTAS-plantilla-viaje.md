@@ -1,6 +1,8 @@
-# Página de viaje — Coffee Region (Kabai Journey) = PLANTILLA de todos los viajes
+# Página de viaje — Coffee Region = PLANTILLA de todos los viajes
 
-Estado: [DISEÑADA]. Esta página es la plantilla de todas las páginas de viaje. Bogotá (Bacatá) se construye con la misma estructura (ver `07-viaje-bogota/BRIEF-viaje-bogota.md`), y las futuras también (Sierra Nevada…).
+> [DECISIÓN 2026-10-26] El viaje se llama **Coffee Region** (ES: Región Cafetera). El nombre Kabai queda retirado; el copy que lo explica está [POR REESCRIBIR] (pendiente #37).
+
+Estado: [DISEÑADA]. Esta página es la plantilla de todas las páginas de viaje. Bogotá se construye con la misma estructura (ver `07-viaje-bogota/BRIEF-viaje-bogota.md`), y las futuras también (Sierra Nevada…).
 
 ## 1. Dónde está
 
